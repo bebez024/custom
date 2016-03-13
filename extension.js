@@ -96,7 +96,7 @@
       welcome: true,
       opLink: null,
       rulesLink: "https://goo.gl/LFKix0",
-      themeLink: "https://rawgit.com/THEFALSE/MFE/master/theme.json",
+      themeLink: "https://raw.githubusercontent.com/bebez024/custom/master/restt.json",
       fbLink: null,
       youtubeLink: null,
       website: null,

@@ -2,7 +2,7 @@
     "room":                     "Resttpowered CZ/SK",
     "author":                   null,
     "icon":                     "https://static-cdn.jtvnw.net/jtv_user_pictures/badges/2565/18x18.png",
-    "css":                      "",https://cdn.radiant.dj/rcs/rs_room.css
+    "css":                      "https://cdn.radiant.dj/rcs/rs_room.css",
     "rules": {
         "allowAutorespond":     true,
         "allowAutowoot":        true,

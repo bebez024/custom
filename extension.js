@@ -46,14 +46,14 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-      botName: "basicBot",
+      botName: "Kotva",
       language: "english",
       chatLink: "https://rawgit.com/bscBot/source/master/lang/en.json",
       scriptLink: "https://rawgit.com/bscBot/source/master/basicBot.js",
       roomLock: false, // Requires an extension to re-load the script
-      startupCap: 1, // 1-200
-      startupVolume: 0, // 0-100
-      startupEmoji: false, // true or false
+      startupCap: 100, // 1-200
+      startupVolume: 30, // 0-100
+      startupEmoji: true, // true or false
       autowoot: true,
       autoskip: false,
       smartSkip: true,
@@ -102,12 +102,12 @@
       website: null,
       intervalMessages: [],
       messageInterval: 5,
-      songstats: true,
+      songstats: false,
       commandLiteral: "!",
       blacklists: {
-        NSFW: "https://rawgit.com/bscBot/custom/master/blacklists/NSFWlist.json",
-        OP: "https://rawgit.com/bscBot/custom/master/blacklists/OPlist.json",
-        BANNED: "https://rawgit.com/bscBot/custom/master/blacklists/BANNEDlist.json"
+        NSFW: "https://raw.githubusercontent.com/bebez024/custom/master/blacklists/NSFWlist.json",
+        OP: "https://raw.githubusercontent.com/bebez024/custom/master/blacklists/OPlist.json",
+        BANNED: "https://raw.githubusercontent.com/bebez024/custom/master/blacklists/BANNEDlist.json"
       }
     }));
 

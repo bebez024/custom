@@ -1,7 +1,7 @@
 (function () {
 
     // Change this to your GitHub username so you don't have to modify so many things.
-    var fork = "bscBot";
+    var fork = "bbz";
 
     // Define our function responsible for extending the bot.
     function extend() {
@@ -37,7 +37,23 @@
                 }
               }
             };
-
+        
+        bot.commands.bye = {
+            command: 'bye',
+            rank: 'bouncer',
+            type: 'startsWith/exact',
+            funkcionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!basicBot.commands.executable(this.rank, chat)) return void(0);
+                var msg = chat.message.toLower();
+                if (msg === 'all') {
+                    API.sendChat("/all Goodbye!");
+                } else {
+                    API.sendChat("Goodbye!");
+                }
+            }
+        }
+        
         // Load the chat package again to account for any changes
         bot.loadChat();
 

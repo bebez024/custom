@@ -33,7 +33,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                  API.sendChat("/me Bacon!!!");
+                  return API.sendChat("/me Bacon!!!");
                 }
               }
             };
@@ -47,9 +47,9 @@
                 if (!basicBot.commands.executable(this.rank, chat)) return void(0);
                 var msg = chat.message.toLower();
                 if (msg === 'all') {
-                    API.sendChat("/all Goodbye!");
+                    return API.sendChat("/all Goodbye!");
                 } else {
-                    API.sendChat("Goodbye!");
+                    return API.sendChat("Goodbye!");
                 }
             }
         }
